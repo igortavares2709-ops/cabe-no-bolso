@@ -1,0 +1,24 @@
+01 OK | Rateios e excessos por pessoa. Ana 75,00; Bruno 60,00; Carla 75,00; grupo 210,00.
+02 OK | Fixa 100,00; entrada 3,1,2; cotas em ordem 1,2,3: 33,34 / 33,33 / 33,33.
+  Recusado: Selecione ao menos uma pessoa.
+  Recusado: A despesa deve ser positiva.
+  Recusado: Informe a descrição.
+  Recusado: A despesa deve ser positiva.
+  Recusado: Código inválido ou repetido.
+  Recusado: Participante não cadastrado.
+  Recusado: Código já cadastrado.
+  Recusado: O orçamento deve ser igual ou superior a zero.
+  Recusado: Use um valor como 25,90, sem separador de milhar.
+03 OK | Nove tentativas inválidas preservaram o estado anterior.
+04 OK | Ana com limite 80,00: custo 75,00 e excesso zero.
+05 OK | Atividade excluída: 60,00 para cada pessoa e 180,00 no grupo.
+06 OK | Nova instância: duas aberturas recuperaram três pessoas e quatro despesas, sem duplicar.
+  Arquivo inválido ou incompatível.
+  Arquivo não encontrado.
+07 OK | Carga inválida/ausente preservou o passeio. Novo abriu vazio.
+08 OK | Ótimo 3: mantida atividade, retirada sobremesa. 65,00 / 50,00 / 65,00. Total 180,00.
+09 OK | Essenciais de Ana 50,00 para limite 40,00; excesso 10,00. Sem solução.
+10 OK | Café da equipe: Ivo 17,51; Lia 20,00; total 37,51.
+  Recusado: O simulador aceita até dez opcionais.
+11 OK | Dez opcionais aceitas; onze sinalizadas.
+12 OK | Duas telas Swing renderizadas com o caso de referência.

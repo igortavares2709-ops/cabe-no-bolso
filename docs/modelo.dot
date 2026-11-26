@@ -1,0 +1,14 @@
+digraph UML {
+graph [rankdir=TB,bgcolor=white,nodesep=.34,ranksep=.56,pad=.12];
+node [shape=record,fontname="DejaVu Sans",fontsize=12,style=filled,fillcolor="#f3f6f7",color="#52727a",margin="0.12,0.09"];
+edge [fontname="DejaVu Sans",fontsize=11,color="#355660"];
+Plano [label="{Planejamento|- pessoas : TreeMap\l- despesas : ArrayList\l|+ cadastrar(p), atualizar(p)\l+ incluir(d), editar(i,d), excluir(i)\l+ custo(código, seleção), total(seleção)\l+ excesso(p, seleção)\l}"];
+Pessoa [label="{Participante|− codigo : int\l− nome : String\l− orcamento : BigInteger\l|+ codigo(), nome(), orcamento()\l}"];
+Desp [label="{«abstrata» Despesa|− descricao : String\l− valor : BigInteger\l− codigos : ArrayList\l− prioridade : int\l|+ cota(código)\l# calcular(índice, quantidade)\l+ tipo()\l}"];
+Fixa [label="{Fixa|# calcular(índice, quantidade)\l+ tipo()\l}"];
+Unitaria [label="{PorPessoa|# calcular(índice, quantidade)\l+ tipo()\l}"];
+Plano -> Pessoa [dir=both,arrowtail=diamond,arrowhead=none,taillabel="1",headlabel="0..*",labeldistance=1.7];
+Plano -> Desp [dir=both,arrowtail=diamond,arrowhead=none,taillabel="1",headlabel="0..*",labeldistance=1.7];
+Desp -> Pessoa [label=" códigos ",taillabel="0..*",headlabel="1..*",labeldistance=1.8];
+Desp -> Fixa [dir=back,arrowtail=empty]; Desp -> Unitaria [dir=back,arrowtail=empty];
+}

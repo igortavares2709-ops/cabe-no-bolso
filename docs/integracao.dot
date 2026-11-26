@@ -1,0 +1,11 @@
+digraph MVC {
+graph [rankdir=TB,bgcolor=white,nodesep=.25,ranksep=.4,pad=.15];
+node [shape=record,fontname="DejaVu Sans",fontsize=12,style=filled,fillcolor="#f3f6f7",color="#52727a"];
+edge [fontname="DejaVu Sans",fontsize=10,color="#355660"];
+P [label="{Painel|− controle : Controle\l|− atualizar(), formulario(...)\l+ alternativa()\l}"];
+C [label="{Controle|− plano : Planejamento\l− arquivo : Persistencia\l|+ pessoa(...), despesa(...)\l+ excluir(i), simular()\l+ salvar(p), abrir(p), novo()\l}"];
+I [label="{«interface» Persistencia|+ salvar(plano, caminho)\l+ carregar(caminho) : Planejamento\l}"];
+A [label="{ArquivoLocal|+ salvar(plano, caminho)\l+ carregar(caminho)\l}"];
+S [label="{Simulador|+ buscar(plano) : Resultado\l}"]; M [label="Planejamento"];
+P -> C [label="1"]; C -> I [label="1"]; C -> M [label="1"]; C -> S [style=dashed]; I -> A [style=dashed,dir=back,arrowtail=empty]; S -> M [style=dashed];
+}

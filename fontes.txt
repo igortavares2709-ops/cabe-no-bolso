@@ -1,0 +1,12 @@
+src/bolso/Main.java
+src/bolso/arquivo/ArquivoLocal.java
+src/bolso/arquivo/Persistencia.java
+src/bolso/controle/Controle.java
+src/bolso/modelo/Despesa.java
+src/bolso/modelo/Fixa.java
+src/bolso/modelo/Participante.java
+src/bolso/modelo/Planejamento.java
+src/bolso/modelo/PorPessoa.java
+src/bolso/modelo/Simulador.java
+src/bolso/visao/Painel.java
+test/bolso/Validacao.java
