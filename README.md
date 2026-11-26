@@ -2,7 +2,9 @@
 
 Aplicação desktop para planejar um passeio, ratear despesas entre pessoas selecionadas e comparar os custos com seus orçamentos. Inclui o simulador da seção 7.
 
-**Integrante identificado:** Igor Barroso Tavares. A matrícula consta no relatório técnico.
+**Igor Barroso Tavares**
+
+Realizei esta atividade individualmente porque não encontrei um meio de entrar em contato com os demais integrantes da equipe.
 
 ## Executar
 
@@ -53,4 +55,4 @@ A relação entre despesa e participante é representada pelo código estável. 
 
 ## Relatório técnico
 
-[Baixar o relatório em PDF](docs/Relatorio_Cabe_no_Bolso.pdf). Para a entrega no AVA, a equipe deve conferir os dados dos integrantes e registrar as contribuições realizadas.
+[Baixar o relatório em PDF](docs/Relatorio_Cabe_no_Bolso.pdf).
